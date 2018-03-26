@@ -1,0 +1,36 @@
+{% if site.busuanzi_count.enable %}
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  {% if site.busuanzi_count.site_uv %}
+    <span class="site-uv">
+      {{ site.busuanzi_count.site_uv_header }}
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      {{ site.busuanzi_count.site_uv_footer }}
+    </span>
+  {% endif %}
+
+  {% if site.busuanzi_count.site_pv %}
+    <span class="site-pv">
+      {{ site.busuanzi_count.site_pv_header }}
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      {{ site.busuanzi_count.site_pv_footer }}
+    </span>
+  {% endif %}
+  <div class="theme-info">
+    <div class="powered-by"></div>
+    <span class="post-count"><i class="fa fa-pencil"></i> 博客全站共
+      {% assign count = 0 %}
+      {% for post in site.posts %}
+          {% assign single_count = post.content | strip_html | strip_newlines | remove: " " | size %}
+          {% assign count = count | plus: single_count %}
+      {% endfor %}
+      {% if count > 1000 %}
+          {{ count | divided_by: 1000 }} k {{ count | modulo: 1000 }}
+      {% else %}
+          {{ count }}
+      {% endif %} 
+    字</span>
+  </div>
+</div>
+{% endif %}
