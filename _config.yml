@@ -346,8 +346,8 @@ post_wordcount:
 
 # Reward settings
 reward_comment: 这是我的原创文章，如果觉得不错，可以打个赏~
-wechatpay: /family/assets/images/wechat-reward-image.jpg
-alipay: /family/assets/images/alipay-reward-image.jpg
+wechatpay: /assets/images/wechat-reward-image.jpg
+alipay: /assets/images/alipay-reward-image.jpg
  
 
 # Declare license on posts
