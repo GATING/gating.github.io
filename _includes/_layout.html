@@ -83,6 +83,11 @@
   {% include _third-party/scroll-cookie.html %}
   {% include _third-party/exturl.html %}
   <script type="text/javascript" src="{{ site.js | relative_url }}/src/love.js?v={{ site.version }}"></script>
+  <script>(function () {
+      var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?50f31c13d2216873d4a59dfbb2cbcc61" : "https://jspassport.ssl.qhimg.com/11.0.1.js?50f31c13d2216873d4a59dfbb2cbcc61";
+      document.write('<script src="' + src + '" id="sozz"><\/script>');
+    })();
+  </script>
   <script>
     (function () {
       var bp = document.createElement('script');
