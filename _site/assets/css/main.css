@@ -477,7 +477,7 @@ img[src*='#center'] { display: block; margin: auto; }
 .posts-expand .post-meta { margin: 3px 0 60px 0; color: #999; font-family: "Varela Round", "Varela Round", "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 12px; text-align: center; }
 .posts-expand .post-meta .post-category-list { display: inline-block; margin: 0; padding: 3px; }
 .posts-expand .post-meta .post-category-list-link { color: #999; }
-.posts-expand .post-meta .post-description { font-size: 14px; margin-top: 2px;display:none }
+.posts-expand .post-meta .post-description { font-size: 14px; margin-top: 2px;display:none; }
 
 .post-wordcount { display: inline-block; }
 
