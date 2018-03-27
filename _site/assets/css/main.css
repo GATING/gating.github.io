@@ -477,7 +477,7 @@ img[src*='#center'] { display: block; margin: auto; }
 .posts-expand .post-meta { margin: 3px 0 60px 0; color: #999; font-family: "Varela Round", "Varela Round", "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 12px; text-align: center; }
 .posts-expand .post-meta .post-category-list { display: inline-block; margin: 0; padding: 3px; }
 .posts-expand .post-meta .post-category-list-link { color: #999; }
-.posts-expand .post-meta .post-description { font-size: 14px; margin-top: 2px;display:none; }
+.posts-expand .post-meta .post-description { font-size: 14px; margin-top: 2px; }
 
 .post-wordcount { display: inline-block; }
 
@@ -593,7 +593,7 @@ img[src*='#center'] { display: block; margin: auto; }
 .links-of-author { margin-top: 20px; }
 
 .links-of-author a { display: inline-block; vertical-align: middle; margin-right: 10px; margin-bottom: 10px; border-bottom-color: #222222; font-size: 13px; }
-.links-of-author a:before { display: inline-block; vertical-align: middle; margin-right: 3px; content: " "; width: 4px; height: 4px; border-radius: 50%; background: #4dffa6; }
+.links-of-author a:before { display: inline-block; vertical-align: middle; margin-right: 3px; content: " "; width: 4px; height: 4px; border-radius: 50%; background: #59ff61; }
 
 .links-of-blogroll { font-size: 13px; }
 
