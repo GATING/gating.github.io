@@ -26,7 +26,7 @@
           {% assign count = count | plus: single_count %}
       {% endfor %}
       {% if count > 1000 %}
-          {{ count | divided_by: 1000 }} k {{ count | modulo: 1000 }}
+          {{ count | divided_by: 1000 }}.{{ count | modulo: 1000 }}k
       {% else %}
           {{ count }}
       {% endif %} 
