@@ -251,7 +251,7 @@ module.exports = {
 
 再次运行，发现可以打开页面了
 
-> 总结：在 vite 中使用 jsx 还是稍微有点麻烦的，一是使用到 jsx 语法的 js 文件都必须改成使用 jsx 后缀名，二是在 vue 的 sfc 组件中还得加上 jsx 标识
+> 总结：在 vite 中使用 jsx 还是稍微有点麻烦的，一是使用到 jsx 语法的 js 文件都必须改成使用 jsx 后缀名，二是在 vue 的 sfc 组件中还得加上 jsx 标识(仅仅引入一个 .jsx 文件 不需要加上)
 
 ### require 语法处理
 
@@ -617,15 +617,17 @@ Vue.use(KeepAlive);
 
 # 未解决的问题
 
-- 含有 jsx 标识的 vue 文件热更新失效，.jsx 文件有效，[相关 issue](https://github.com/vitejs/vite/issues/1486)，但是我在 vue2 中使用并未热更新
+- 含有 jsx 标识的 vue 文件热更新失效，.jsx 文件有效，[相关 issue](https://github.com/vitejs/vite/issues/1486)
 
-> ps: vue-cli-plugin-vite 插件中的 vite 是锁定 vite@2.5.1 版本的[相关 issue](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/46)，而上面的 issue 是 2.5.3 版本才 merge，不过我尝试使用 vite@2.5.3 也没有成功
+  - 但是有[相关 pr](https://github.com/vitejs/vite/pull/4563)实现了 jsx in sfc 的热更新，但是我在 vue2 中使用并未热更新
+
+> ps: vue-cli-plugin-vite 插件中的 vite 是锁定 vite@2.5.1 版本的[相关 issue](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/46)，而这个 issue 的 [相关 pr](https://github.com/vitejs/vite/pull/4563) 是 2.5.3 版本才 merge，不过我尝试使用 vite@2.5.3 也没有成功
 
 # 总结
 
 虽然- -这里没有用实际项目对比，也没有实际的数据对比，但是大家可以 download 那个配置在自己项目体验一下，迁移起来还是比较简单的。如果有什么问题欢迎大家留言进行交流~~
 
-最后再强调，在 vite 中使用 jsx 语法的话，一是使用到 jsx 语法的 js 文件都必须改成使用 jsx 后缀名，二是在 vue 的 sfc 组件中还得加上 jsx 标识
+最后再强调，在 vite 中使用 jsx 语法的话，一是使用到 jsx 语法的 js 文件都必须改成使用 jsx 后缀名，二是在 vue 的 sfc 组件中还得加上 jsx 标识(仅仅引入一个 .jsx 文件 不需要加上)
 
 仓库代码链接如下：
 
