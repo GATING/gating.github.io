@@ -623,6 +623,9 @@ Vue.use(KeepAlive);
 
 > ps: vue-cli-plugin-vite 插件中的 vite 是锁定 vite@2.5.1 版本的[相关 issue](https://github.com/IndexXuan/vue-cli-plugin-vite/issues/46)，而这个 issue 的 [相关 pr](https://github.com/vitejs/vite/pull/4563) 是 2.5.3 版本才 merge，不过我尝试使用 vite@2.5.3 也没有成功
 
+> ps: 看了下源代码，[github](https://github.com/vitejs/vite)上的源码已经 merge 了，但是 npm 上部分包仍然没有发布，比如[@vitejs/plugin-vue](https://www.npmjs.com/package/@vitejs/plugin-vue)、[@vitejs/plugin-vue-jsx](https://www.npmjs.com/package/@vitejs/plugin-vue-jsx)，猜测下个版本应该就能实现 jsx in sfc 的热更新了 😍。
+> 不过我们也可以将 [pr](https://github.com/vitejs/vite/pull/4563) 的源码复制到 node_modules 里也可提前体验 jsx in sfc 的热更新🤞
+
 # 总结
 
 虽然- -这里没有用实际项目对比，也没有实际的数据对比，但是大家可以 download 那个配置在自己项目体验一下，迁移起来还是比较简单的。如果有什么问题欢迎大家留言进行交流~~
