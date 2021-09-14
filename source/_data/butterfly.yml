@@ -234,9 +234,9 @@ footer_copyright:
   enable: false
 
 ICP:
-  enable: false
-  url:
-  text:
+  enable: true
+  url: https://beian.miit.gov.cn/
+  text: 粤ICP备17035705号
   icon: /img/icp.png
 
 ####   Analysis    ####
