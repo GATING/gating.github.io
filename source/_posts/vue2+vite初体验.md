@@ -94,7 +94,7 @@ module.exports = {
 
 > ps: 兼容这些虽然多数都是 vue-cli-plugin-vite 做的事，但是就是想着大家可以拿来即用 😂，更多兼容参考[vue-cli-plugin-vite](https://github.com/IndexXuan/vue-cli-plugin-vite)
 
-为了更好的编写体验，这里提供一个基础的 `vue-cli` 的[demo]()，可以 download 下来一起尝试编写一下。
+为了更好的编写体验，这里提供一个基础的 `vue-cli` 的[demo](https://gitee.com/gating/demo/tree/master/vite/vue2-vite-demo-template)，可以 download 下来一起尝试编写一下。
 
 ## 安装 vue-cli-plugin-vite
 
