@@ -72,7 +72,7 @@ date: 2020/01/17
    - 设置`npm`镜像源
 
    ```bash
-   nvm npm_mirror https://npm.taobao.org/mirrors/node/
+   nvm npm_mirror https://npm.taobao.org/mirrors/npm/
    ```
 
 ## nrm
